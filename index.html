@@ -7,22 +7,31 @@
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
+
   </head>
   <body>
-    <div id="abon_placeholder">
-
-    </div>
-    <form>
+    <div class="container border border-primary" style="height: 200px;">
       <div class="row">
-        <div class="col">
-          <input type="text" id="abon_num" class="form-control" placeholder="Лицевой счет абонента">
+        <div class="col-sm border border-info" id="abon_placeholder">
+          Тут будет выводится информация об абоненте
         </div>
-        <div class="col">
-          <button class="btn btn-primary" type="submit" onclick="getAbonCard()">Run</button>
+        <div class="col-sm border border-warning" id="ip_placeholder">
+          Тут будет выводится информация об 172 айпи
         </div>
       </div>
-    </form>
+    </div>
+    <div class="container fixed-bottom " >
+      <form>
+        <div class="row" >
+          <div class="col">
+            <input type="text" id="abon_num" class="form-control " placeholder="Лицевой счет абонента">
+          </div>
+          <div class="col">
+            <button class="btn btn-primary" type="submit" onclick="getAbonCard()">Run</button>
+          </div>
+        </div>
+      </form>
+    </div>
     <script src="renderer.js"></script>
-
   </body>
 </html>

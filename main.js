@@ -1,6 +1,7 @@
 const ssh2 = require('ssh2').Client;
 const path = require('path');
 const url = require('url');
+const mysql2 = require('mysql2');
 const {app, BrowserWindow} = require('electron');
 
 var client = new ssh2();
@@ -9,7 +10,7 @@ let MainWindow;
 
 function createWindow() {
   MainWindow = new BrowserWindow({
-    width : 700,
+    width : 800,
     height : 500
   });
 
@@ -19,7 +20,7 @@ function createWindow() {
     slashes  : true
   }));
 
-  MainWindow.webContents.openDevTools();
+//  MainWindow.webContents.openDevTools();
   MainWindow.on('closed', ()=>{
     MainWindow = null;
   });
@@ -54,10 +55,11 @@ function getAbonCardFromDB(abon_num) {
   });
 }
 
-
+getAbonCardFromDB();
 app.on('ready', createWindow);
 
-client.on('ready',function(){
+/*
+  client.on('ready',function(){
   console.log('connected')
 }).connect({
   host : '91.219.32.5',
@@ -66,3 +68,4 @@ client.on('ready',function(){
   password :'lhjgyenm353355',
 
 });
+*/
