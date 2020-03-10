@@ -1,0 +1,23 @@
+{
+  "name": "sshapp",
+  "version": "1.0.0",
+  "description": "тестовая программа для ssh",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dancer221/ssh.git"
+  },
+  "author": "George Zhilenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dancer221/ssh/issues"
+  },
+  "homepage": "https://github.com/dancer221/ssh#readme",
+  "dependencies": {
+    "electron": "^8.1.1",
+    "ssh2": "^0.8.8"
+  }
+}
