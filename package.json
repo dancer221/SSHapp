@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/dancer221/ssh#readme",
   "dependencies": {
-    "electron": "^8.1.1",
+    "electron": "^15.5.5",
     "mysql2": "^2.1.0",
     "ssh2": "^0.8.8"
   }
